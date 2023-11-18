@@ -1,12 +1,14 @@
 {
+  "homepage": "https://evgeny94.github.io/new_cv_dev",
   "name": "new-cv-project",
   "version": "1.0.0",
   "description": "",
-  "main": "CV.js",
-  "homepage": "https://evgeny94.github.io/new_cv_dev",
+  "main": " .js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "nodemon server.js"
+    "start": "nodemon server.js",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
+    "build": "npm start"
   },
   "keywords": [],
   "author": "",
@@ -15,6 +17,7 @@
     "express": "^4.17.1"
   },
   "devDependencies": {
+    "gh-pages": "^6.0.0",
     "nodemon": "^3.0.1"
   }
 }

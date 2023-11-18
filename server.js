@@ -10,7 +10,7 @@ console.log(__dirname);
 
 // sendFile will go here
 app.get('/', function(req, res) {
-  res.sendFile(path.join(__dirname, '/CV.html'));
+  res.sendFile(path.join(__dirname, '/index.html'));
 });
 
 app.listen(port);
