@@ -3,7 +3,7 @@
   "name": "new-cv-project",
   "version": "1.0.0",
   "description": "",
-  "main": " .js",
+  "main": "server.js",
   "scripts": {
     "start": "nodemon server.js",
     "predeploy": "npm run build",
