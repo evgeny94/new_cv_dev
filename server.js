@@ -13,5 +13,9 @@ app.get('/', function(req, res) {
   res.sendFile(path.join(__dirname, '/index.html'));
 });
 
+app.get('/Evgeny%20Musatov-CV.docx', function(req, res) {
+  res.sendFile(path.join(__dirname, '/Evgeny Musatov-CV.docx'));
+});
+
 app.listen(port);
 console.log('Server started at http://localhost:' + port);
