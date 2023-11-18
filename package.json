@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "",
   "main": "CV.js",
+  "homepage": "https://evgeny94.github.io/new_cv_dev",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "nodemon server.js"
