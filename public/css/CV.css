@@ -88,7 +88,16 @@ body {
     width: 41.66%
 }
 
-.col-6-section1, .col-6, .col-12-section2, .col-12-section3, .col-12-section4 {
+.col-6-section1, .col-6 {
+    width: 50%;
+    position:relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.col-12-section2, .col-12-section3, .col-12-section4 {
     width: 100%;
     position:relative;
     display: flex;
