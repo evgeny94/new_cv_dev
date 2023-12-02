@@ -2,20 +2,38 @@ function downloadCV() {
     window.open('Evgeny Musatov-CV.docx');
 }
 
-//let upperTxt = "Evgeny Musatov";
-//let i = 0;
 
-
-function introFunction() {
-    if (i < upperTxt.length) {
-        document.getElementById("legacy").innerHTML += upperTxt.charAt(i);
-        i++;
-        setTimeout(introFunction, 200);
-    }
+function scrollToSection(sectionClass) {
+    var section = document.querySelector('.' + sectionClass);
+    section.scrollIntoView({ behavior: 'smooth' });
 }
 
-function topFunction() {
-  document.body.scrollTop = 0; // For Safari
-  document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+
+function calculateAge() {
+    // Static birthdate in the format "YYYY-MM-DD"
+    var birthdate = "1994-01-18";
+
+    // Parse the birthdate string into a Date object
+    var birthDate = new Date(birthdate);
+
+    // Get the current date
+    var currentDate = new Date();
+
+    // Calculate the difference in milliseconds
+    var differenceInMilliseconds = currentDate - birthDate;
+
+    // Convert the difference to years
+    var age = Math.floor(differenceInMilliseconds / (365.25 * 24 * 60 * 60 * 1000));
+
+    return age;
+}
+
+// Get the element with the ID 'age' and update its text content with the calculated age
+var ageElement = document.getElementById('age');
+if (ageElement) {
+    var age = calculateAge();
+    ageElement.textContent = age + " Years Old";
+} else {
+    console.error("Element with ID 'age' not found");
 }
 

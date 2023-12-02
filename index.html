@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>CV-Evgeny Musatov</title>
     <!-- please make all buttons orange, including this one! -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -16,10 +18,8 @@
 
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    
+    <link rel="stylesheet" href="./public/fontawesome-free-6.5.1-web/fontawesome-free-6.5.1-web/css/all.css">
     <link rel="stylesheet" href="./public/css/CV.css">
-
-    <script src="./public/CV.js"></script>
     
     <meta name=" content =" width=device width, initial scale=1.0>
 </head>
@@ -35,22 +35,22 @@
             <div class="col-4-no-padding">
                 <div class="col-33-row-header">
                     <a href="https://www.facebook.com/evgenymusatov/" target="_blank">
-                        <span class="icon"><i class="fa fa-facebook-square" aria-hidden="true"></i></span></a>
+                        <span class="icon"><i class="fa-brands fa-facebook"></i></span></a>
                 </div>
         
                 <div class="col-33-row-header"><a href="https://www.linkedin.com/in/evgeny-musatov-26b2ab1b9/" target="_blank">
-                    <span class="icon"><i class="fa fa-linkedin-square" aria-hidden="true"></i></span></a>
+                    <span class="icon"><i class="fa-brands fa-linkedin"></i></span></a>
                 </div>
         
                 <div class="col-33-row-header"><a href="https://mail.google.com/mail/?view=cm&fs=1&to=Evgenymusatov94@gmail.com" target="_blank">
-                    <span class="icon"><i class="fa fa-envelope" aria-hidden="true"></i></span></a>
+                    <span class="icon"><i class="fa-solid fa-envelope"></i></span></a>
                 </div>
         
                 <div class="col-33-row-header"><a href="https://github.com/evgeny94" target="_blank">
-                    <span class="icon"><i class="fa fa-github-square" aria-hidden="true"></i></span></a>
+                    <span class="icon"><i class="fa-brands fa-github"></i></span></a>
                 </div>
                 <div class="col-33-row-header"><a href="https://wa.me/972546484531" target="_blank">
-                    <span class="icon"><i class="fa fa-whatsapp" aria-hidden="true"></i></span></a>
+                    <span class="icon"><i class="fa-brands fa-whatsapp"></i></span></a>
                 </div>
             </div>
         </div>  
@@ -76,18 +76,18 @@
         </div>
         
         <div class="col-4-page-links">
-            <div class="col-33-page-links">About</div>
-            <div class="col-33-page-links">Skills</div>
-            <div class="col-33-page-links">Portfolio</div>
-            <div class="col-33-page-links">Experience</div>
+            <button class="col-33-page-links" onclick="scrollToSection('col-6-section1')">About</button>
+            <button class="col-33-page-links" onclick="scrollToSection('col-12-section2')">Skills</button>
+            <button class="col-33-page-links" onclick="scrollToSection('col-12-section3')">Experience</button>
+            <button class="col-33-page-links" onclick="scrollToSection('col-12-section4')">Portfolio</button>
         </div>
-
+        
     </div>
 </div>
 
 <div class="row-main">
     <div class="ttrow1">
-        <div class="col-6">
+        <div class="col-6-section1">
             <h2>About</h2>
             <ul>
                 <li>3-rd year engineering student</li>
@@ -103,12 +103,12 @@
                 <li>Specializing in information systems</li>
                 <li>Study at Ben-Gurion University</li>
                 <li>English, Russian and Hebrew - Fluent</li>
-                <li>27 Years Old</li>
+                <li id="age"> Years Old</li>
             </ul>
         </div>
     </div>
     <div class="ttrow2">
-        <div class="col-12">
+        <div class="col-12-section2">
             <h2>Professional Skills</h2>
             <h4>General</h4>
             <ul>
@@ -126,7 +126,7 @@
         </div>
     </div>
     <div class="ttrow3">
-        <div class="col-12">
+        <div class="col-12-section3">
             <h2>Experience</h2>
             <ul>
                 <li>Teacher at "Impulse" School</li>
@@ -135,7 +135,7 @@
         </div>
     </div>
     <div class="ttrow4">
-        <div class="col-12">
+        <div class="col-12-section4">
             <h2>Portfolio</h2>
             Will be update as soon as possible...
         </div>
@@ -143,29 +143,13 @@
 </div>
 
 <div class="row-footer">
-    <div class="col-9">
-        <h2>Contact Me</h2>
-        <h5>Phone:</h5>
-        <a href="https://wa.me/972546484531"><span class="icon"><i class="fa fa-whatsapp" aria-hidden="true"></i></span></a>
-        <h5>E-mail:</h5>
-        Evgenymusatov94@gmail.com<br><br>
-        <h4>"I'll be back:"</h4>
-        <form>
-            <label for="fullname">Full Name:</label>
-            <input type="text" id="fullname"><br><br>
-            <label for="mail">E-mail:</label>
-            <input type="email" id="mail"><br><br>
-            <label for="phone">Phone:</label>
-            <input type="number" id="phone"><br><br>
-            <label>Note:</label><br>
-            <textarea cols="35" rows="5"></textarea><br><br>
-        </form>
-    </div>
-    <div class="col-3-footer">
-        <button id="goUp" onclick="topFunction()">Go-Up</button>
+    <div class="col-12-bottom">
+        <div class="col-3-footer">
+            <button id="goUp" class="btn-goUp" onclick="scrollToSection('row-header')">Go-Up</button>
+        </div>
     </div>
 
 </div>
-
+<script src="./public/CV.js"></script>
 </body>
 </html>

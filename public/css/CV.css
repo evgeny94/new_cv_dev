@@ -60,6 +60,8 @@ body {
     padding: 15px;
     background-color: #b0a695;
     overflow:hidden;
+
+    white-space: nowrap;
 }
 
 
@@ -83,6 +85,14 @@ body {
 }
 
 .col-6 {
+    width: 50%;
+    position:relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.col-6-section1 {
     width: 50%;
     position:relative;
     display: flex;
@@ -115,6 +125,45 @@ body {
 
 .col-12 {
     width: 100%;
+}
+
+.col-12-bottom {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+
+}
+
+.btn-goUp{
+    transition: transform 0.5s ease-in-out; /* Add a smooth transition effect */
+    display: block; /* Ensure proper rendering of the block */
+    border: 2px solid rgba(17, 57, 70, 0.85);
+    border-radius: 2em;
+    padding: 1rem;
+    background-color: #b0a695;
+    font-size: 18px;    
+}
+
+.btn-goUp:hover{
+    transform: scale(1.25); /* Increase the scale on hover */
+}
+
+.col-12-section2 {
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.col-12-section3 {
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.col-12-section4 {
+    width: 100%;
+    justify-content: center;
+    align-items: center;
 }
 
 .col-12-social-links {
@@ -181,6 +230,9 @@ h2, h4 {
 
 .col-3-footer{
     position:relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .col-12-legacy{
@@ -229,16 +281,6 @@ h2, h4 {
     display: flex;
     justify-content: center;
     align-items: center;
-}
-
-#goUp {
-    border-radius: 10em;
-    border: 3px solid #b0a695b9;
-    padding: 15px 32px;
-    font-size: 16px;
-    position: absolute;
-    right:    -270px;
-    bottom:   -520px;
 }
 
 [id*="button"] {
