@@ -177,6 +177,10 @@ body {
 
 
 h2, h4 {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     font-family: 'Forum', serif;
     font-family: 'Stardos Stencil';
     font-weight: 900;
@@ -441,4 +445,115 @@ h2,h4{
     100% {
         transform: translateX(1);
     }
+}
+
+
+
+
+
+/* Small screens (phones) 767px */
+@media only screen and (max-width: 1530px) {
+    [class*="col"] {
+        padding: 10px; /* Adjust padding for smaller screens */
+    }
+    
+    .col-33 {
+        width: 100%; /* Full width on smaller screens */
+    }
+
+    .col-33-page-links {
+        width: 100%; /* Full width on smaller screens */
+        margin: 5px;
+        padding: 2.5px;
+    }
+
+    .col-12-top {
+        height: 400px; /* Adjust height for smaller screens */
+        display: flex;
+        flex-direction: column;
+    }
+
+    .ttrow1 {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .col-6-section1, .col-6 {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .col-3, .col-4-shake {
+        width: 100%; /* Full width on smaller screens */
+        display: flex;
+        position: relative;
+    }
+
+    .col-4-page-links {
+        width: 100%; /* Full width on smaller screens */
+        display: flex;
+        position: relative;
+        margin: 0;
+    }
+
+    .col-4-legacy, .row-header, .col-12-legacy, .col-12-social-links {
+        width: 100%;
+        padding: 0;
+    }
+
+
+
+
+
+
+
+
+
+
+    .wave {
+        background: rgb(255 255 255 / 25%);
+        border-radius: 300% 200% 0 0;
+        position: absolute;
+        width: 1000%;
+        height: 3%;
+    }
+
+    .wave:nth-of-type(2) {
+        height: 9%;
+        animation: wave 4s linear reverse infinite;
+        opacity: 0.8;
+    }
+    
+    .wave:nth-of-type(3) {
+        height: 6%;
+        animation: wave 6s linear reverse infinite;
+        opacity: 0.8;
+    }
+    
+    .wave:nth-of-type(4) {
+        top: 0;
+        height: 9%;
+        border-radius: 0 0 300% 200%;
+        animation: wave 10s -1s reverse infinite;
+        opacity: 1.5;
+    }
+    
+    .wave:nth-of-type(5) {
+        top: 0;
+        height: 6%;
+        border-radius: 0 0 300% 200%;
+        animation: wave 4s -1s linear infinite;
+        opacity: 0.8;
+    }
+    
+    .wave:nth-of-type(6) {
+        top: 0;
+        height: 3%;
+        border-radius: 0 0 300% 200%;
+        animation: wave 6s -1s linear infinite;
+        opacity: 0.8;
+    }
+
 }
