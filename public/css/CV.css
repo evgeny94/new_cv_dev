@@ -308,14 +308,15 @@ h2, h4 {
 }
 
 @keyframes slidein {
+    
     from {
-      margin-top: 100%;
-      width: 300%;
+      /*width: 300%;*/
+      right: 200%;
     }
   
     to {
-      margin-top: 0%;
-      width: 100%;
+      /*width: 100%;*/
+      right: 0%;
     }
   }
 
