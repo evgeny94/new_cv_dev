@@ -160,10 +160,10 @@ h2, h4 {
     display: flex;
     justify-content: center;
     align-items: center;
-    font-family: 'Forum', serif;
     font-family: 'Stardos Stencil';
     font-weight: 900;
     margin: 5px;
+    text-decoration-line: underline;
 }
 
 .col-12-top {
@@ -225,12 +225,7 @@ h2, h4 {
     animation-name: slidein;
     float: none;
     padding: 0px;
-
-    
-    font-family: 'Forum', serif;
-    font-family: 'Kaushan Script', cursive;
-    /*font-family: 'Stardos Stencil';*/
-    
+    font-family: 'Kaushan Script', cursive;    
 }
 
 .col-4-legacy {
@@ -288,11 +283,6 @@ h2, h4 {
   }
 
 
-
-
-h2,h4{
-    text-decoration-line: underline;
-}
 @keyframes shake {
     0% {
         transform: translate(0);
@@ -486,8 +476,30 @@ h2,h4{
 
 
 
+    .button-download:hover {
+        transform: none;
+    }
+    
+    .btn-goUp:hover{
+        transform: none;
+    }
 
+    .icon:hover {
+        transform: none;
+    }
 
+    .col-33-page-links:hover {
+        transform: none;
+    }
+
+    h2, h4 {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-weight: 600;
+        margin: 5px;
+    }
 
 
 
