@@ -8,6 +8,21 @@ function scrollToSection(sectionClass) {
     section.scrollIntoView({ behavior: 'smooth' });
 }
 
+function goto(page) {
+    if (page) {
+        // Redirect to the specified URL
+        window.location.href = page;
+      } else {
+        // Log an error if the URL is not provided
+        console.error("Error: URL not provided for redirection.");
+      }  
+}
+
+window.onload = function() {
+  // Your code here
+  console.log('Page has loaded!');
+};
+
 
 function calculateAge() {
     // Static birthdate in the format "YYYY-MM-DD"

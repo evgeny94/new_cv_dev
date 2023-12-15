@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>CV-Evgeny Musatov</title>
-    <link rel="icon" href="./public/pics/Evgeny_musatov_icon200.ico" type="image/png">
+    <link rel="icon" href="../pics/Evgeny_musatov_icon200.ico" type="image/png">
 
     <!-- please make all buttons orange, including this one! -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -20,8 +20,8 @@
 
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="./public/fontawesome-free-6.5.1-web/fontawesome-free-6.5.1-web/css/all.css">
-    <link rel="stylesheet" href="./public/css/CV.css">
+    <link rel="stylesheet" href="../fontawesome-free-6.5.1-web/fontawesome-free-6.5.1-web/css/all.css">
+    <link rel="stylesheet" href="../css/CV.css">
     
     <meta name=" content =" width=device width, initial scale=1.0>
 </head>
@@ -30,7 +30,7 @@
 <div class="row-header">
     <div class="col-4-legacy">
         
-        <a style="text-decoration:none"  href="./">
+        <a style="text-decoration:none"  href="../../">
             <div class="col-12-legacy" id="legacy">
                 Evgeny Musatov
             </div>
@@ -77,98 +77,46 @@
             <button id="button-download" class="button-download" onclick="downloadCV()">Download CV</button>
         </div>
         <div class="col-3" id="myimage_div"> 
-            <a style="text-decoration:none"  href="./">
-                <img src="https://evgeny94.github.io/new_cv_dev/public/pics/me.jpg" id="myimage">
+            <a style="text-decoration:none"  href="../../">
+                <img src="../pics/me.jpg" id="myimage">
             </a>
         </div>
         
         <div class="col-4-page-links">
-            <button class="col-33-page-links" onclick="scrollToSection('col-6-section1')">About</button>
-            <button class="col-33-page-links" onclick="scrollToSection('col-12-section2')">Skills</button>
-            <button class="col-33-page-links" onclick="scrollToSection('col-12-section3')">Experience</button>
-            <button class="col-33-page-links" onclick="goto('./public/pages/portfolio.html')">Portfolio</button>
+            <button class="col-33-page-links" onclick="goto('../../#section1')">About</button>
+            <button class="col-33-page-links" onclick="goto('../../#section2')">Skills</button>
+            <button class="col-33-page-links" onclick="goto('../../#section3')">Experience</button>
+            <button class="col-33-page-links" onclick="goto('../../#section4')">Portfolio</button>
         </div>
         
     </div>
 </div>
 
+
 <div class="row-main">
-    <div class="ttrow1">
-        <div class="col-6-section1" id="section1">
-            <h2>About</h2>
-            <ul>
-                <li id="age"> Years Old</li>
-                <li>Self-disciplined</li>
-                <li>Well organized</li>
-                <li>Strive for professionalism</li>
-                <li>High self-learning abilities</li>
-            </ul>
-        </div>
-        <div class="col-6">
-            <h2>Basic Information</h2>
-            <ul>
-                <li>B.Sc. in Industrial Engineering and Management</li>
-                <li>Specializing in information systems</li>
-                <li>Study at Ben-Gurion University</li>
-                <li>English, Russian and Hebrew - Fluent</li>
-            </ul>
-        </div>
-    </div>
-    <div class="ttrow2">
-        <div class="col-12-section2" id="section2">
-            <h2>Professional Skills</h2>
-            <h4>General</h4>
-            <ul>
-                <li>Problem solving and advanced self-learning abilities</li>
-                <li>Ability to work in a team and make decisions under pressure</li>
-                <li>High analytical capabilities</li>
-            </ul>
-            <h4>Computers & Softwares</h4>
-            <ul>
-                <li>Java, Python, Object Oriented</li>
-                <li>Html, CSS, JavaScript</li>
-                <li>SQL, VBA, Excel</li>
-                <li>LabView, Solid-Works, R Studio</li>
-            </ul>
-        </div>
-    </div>
-    <div class="ttrow3">
-        <div class="col-12-section3" id="section3">
-            <h2>Experience</h2>
-            <ul>
-                <li>Teacher at "Impulse" School</li>
-                <li>IDF, Commander of novices, Operations sergeant</li>
-            </ul>
-        </div>
-    </div>
-    <div class="ttrow4">
-        <div class="col-12-section4"  id="section4">
-            <h2>Portfolio</h2>
-            Will be update as soon as possible...
-        </div>
+    <div class="col-12">
+        <h2>Portfolio</h2>
     </div>
 </div>
 
 <div class="row-footer">
-    <div class="col-12-bottom">
-        <div class="col-3-footer">
-            <button id="goUp" class="btn-goUp" onclick="scrollToSection('row-header')">Go - Up <i class="fa-solid fa-circle-chevron-up"></i></button>
-        </div>
+<div class="col-12-bottom">
+    <div class="col-3-footer">
+        <button id="goUp" class="btn-goUp" onclick="scrollToSection('row-header')">Go - Up <i class="fa-solid fa-circle-chevron-up"></i></button>
     </div>
+</div>
 
 </div>
 
+<!-- Hide .html -->
 <script>
     // Check if the browser supports the HTML5 History API
     if (window.history && window.history.pushState) {
       // Use pushState to change the URL without reloading the page
-      setTimeout(function() {
-        window.history.pushState(null, null, "./");
-      }, 1);
-      
+      window.history.pushState("", "", "./portfolio");
     }
 </script>
 
-<script src="./public/CV.js"></script>
+<script src="../CV.js"></script>
 </body>
 </html>

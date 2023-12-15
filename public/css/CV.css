@@ -2,7 +2,12 @@
     box-sizing: border-box;
     font-family: 'Stardos Stencil';
     font-weight: 700;
-    color: rgba(17, 57, 70, 0.85);
+    color: #113946d9;
+}
+
+html {
+    scroll-behavior: smooth;
+    transition: scroll-behavior 2s ease-in-out;
 }
 
 body {
