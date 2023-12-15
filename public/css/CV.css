@@ -58,6 +58,11 @@ body {
     transform: scale(1.5); /* Increase the scale on hover */
 }
 
+.icon-home{
+    display: block; /* Ensure proper rendering of the block */
+    font-size: 30px;
+}
+
 .col-33-page-links {
     width: 20%;
     transition: transform 0.5s ease-in-out; /* Add a smooth transition effect */
@@ -92,6 +97,12 @@ body {
     width: 41.66%
 }
 
+.ttrow1 {
+    width: 100%;
+    display: flex;
+    margin: 1em 0 1em 0;
+}
+
 .col-6-section1, .col-6 {
     width: 50%;
     position:relative;
@@ -99,16 +110,42 @@ body {
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    border: 2px solid #11394650;
+    border-radius: 10em;
+    margin: 1em;
+    background-color: #b0a6953a;
+
+}
+
+.ttrow2 {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 1em 0 1em 0;
+}
+
+.ttrow3 {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 1em 0 1em 0;
 }
 
 .col-12-section2, .col-12-section3, .col-12-section4 {
-    width: 100%;
+    width: 50%;
     position:relative;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    border: 2px solid #11394650;
+    border-radius: 10em;
+    margin: 1em 0 1em 0;
+    background-color: #b0a6953a;
 }
+
 
 .col-7 {
     width: 58.33%
@@ -199,14 +236,34 @@ h2, h4 {
     background-size: 400% 400%;
     background-attachment: fixed;
     overflow: hidden;
+    margin-bottom: 1em;
 }
 
+.col-12-home {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    border: 2px solid rgba(17, 57, 70, 0.85);
+    border-radius: 5em;
+    transition: transform 0.3s ease-in-out; /* Add a smooth transition effect */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+}
+
+.col-12-home:hover {
+    transform: scale(1.25) translateY(-50%); /* Increase the scale on hover */
+}
 
 .row-header {
+    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
     padding: 15px;
+    position: relative;
 }
 
 .col-4-shake {
@@ -461,10 +518,12 @@ h2, h4 {
         width: 100%;
         display: flex;
         flex-direction: column;
+        justify-content: center;
+        align-items: center;
     }
 
     .col-6-section1, .col-6 {
-        width: 100%;
+        width: 50%;
         display: flex;
         flex-direction: column;
     }
