@@ -565,10 +565,17 @@ h2, h4 {
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        margin-bottom: 0;
+    }
+
+    .ttrow2 {
+        width: 100%;
+        margin: 0;
+        padding: 0;
     }
 
     .col-6-section1, .col-6 {
-        width: 50%;
+        width: 100%;
         display: flex;
         flex-direction: column;
     }
@@ -616,6 +623,9 @@ h2, h4 {
         flex-direction: column;
     }
 
+    .col-12-section2 {
+        width: 100%;
+    }
 
     .button-download:hover {
         transform: none;
