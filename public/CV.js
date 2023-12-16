@@ -52,3 +52,47 @@ if (ageElement) {
     console.error("Element with ID 'age' not found");
 }
 
+/*
+    document.addEventListener('DOMContentLoaded', function() {
+      var deleteButton = document.getElementById('goUp');
+
+      function checkPageHeight() {
+        var pageHeight = Math.max(document.body.scrollHeight, document.body.offsetHeight);
+        console.log(pageHeight)
+        if (pageHeight < 1100) {
+          // If the page height is less than 1500 pixels, hide or remove the button
+          deleteButton.style.display = 'none'; // or deleteButton.remove() to remove it from the DOM
+        } else {
+          // If the page height is 1500 pixels or more, show the button
+          deleteButton.style.display = 'block';
+        }
+      }
+
+      // Check the page height initially and listen for resize events
+      checkPageHeight();
+      window.addEventListener('resize', checkPageHeight);
+    });
+*/
+
+
+document.addEventListener('DOMContentLoaded', function() {
+    var deleteButton = document.getElementById('goUp');
+
+    function checkScrollbar() {
+      var hasVerticalScrollbar = document.body.scrollHeight > window.innerHeight;
+
+      if (hasVerticalScrollbar) {
+        // If there is a vertical scrollbar, display the button
+        deleteButton.style.display = 'block';
+      } else {
+        // If there is no vertical scrollbar, hide the button
+        deleteButton.style.display = 'none';
+      }
+    }
+
+    // Initial check
+    checkScrollbar();
+
+    // Listen for window resize events
+    window.addEventListener('resize', checkScrollbar);
+  });
