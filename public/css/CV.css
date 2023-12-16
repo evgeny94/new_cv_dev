@@ -147,6 +147,7 @@ body {
     justify-content: center;
     align-items: center;
     position: relative;
+    padding: 0;
 }
 
 .col-12-section2-g, .col-12-section2-cs {
@@ -235,12 +236,13 @@ body {
 
 h2, h4 {
     width: 100%;
-    display: flex;
+    display: grid;
     justify-content: center;
     align-items: center;
     font-family: 'Stardos Stencil';
     font-weight: 900;
     margin: 5px;
+    padding-top: 5px ;
     text-decoration-line: underline;
 }
 
@@ -590,9 +592,9 @@ h2, h4 {
     }
 
     .col-12-home {
-        position: absolute;
-        right: 0;
         top: 50%;
+        transform: translateY(-20%);
+        right: 0;
         border: 2px solid rgba(17, 57, 70, 0.85);
         border-radius: 5em;
         display: flex;
