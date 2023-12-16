@@ -135,10 +135,10 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    border: 2px solid #11394650;
+    border: 5px solid #113946b0;
     border-radius: 10em;
     margin: 1em 0 1em 0;
-    background-color: #b0a6953a;
+    background-color: #b0a6959f;
     flex-direction: column;
 }
 
